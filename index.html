@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Todolist</title>
   </head>
 
   <body>
-    <p>Todo</p>
-    <input type="text">
-    <button>Create</button>
-    
+    <p>Input Task:</p>
+    <input type="text" class="input-todo">
+    <button class="add-task-btn" onclick="
+      addTodo();
+    ">Add</button>
+
+    <div class="output"></div>
     <script src="script.js"></script>
   </body>
 </html>
