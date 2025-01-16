@@ -7,7 +7,7 @@
 
 ## Features:
 ### 🚀 Create Tasks
-With just a click, add tasks to your to-do list and keep track of everything you need to get done.
+- With just a click, add tasks to your to-do list and keep track of everything you need to get done.
 
 ### 🗑 Delete Tasks
-Done with a task? Simply hit delete, and say goodbye to it from your list!
+- Done with a task? Simply hit delete, and say goodbye to it from your list!
