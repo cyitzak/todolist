@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #333;
+}
+
+button {
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  margin: 100px auto;
+  width: 500px;
+  border-radius: 3px;
+}
+
+.input-task-grid,
+.output-task-grid {
+  display: grid;
+  grid-template-columns: 220px 150px 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.output-task-grid {
+  align-items: center;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);
+  padding: 10px;
+}
+
+.input-task-grid {
+  margin-bottom: 15px;
+}
+
+.input-name-task,
+.input-date-task {
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);
+}
+
+.create-task-button {
+  background-color: #099268;
+  color: white;
+}
+
+.delete-task-button {
+  background-color: #c2255c;
+  color: white;
+}
+
+.todo-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}

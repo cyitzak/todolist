@@ -1,30 +1,33 @@
-// Array to store the tasks
-const todolist = [];
-
-function addTodo() {
-  // Get the value from the input field and store it in todoName
-  const todoName = document.querySelector('.input-todo').value;
-
-  // Add the new todo to the todolist array
-  todolist.push(todoName);
-
-  // Call the function to update and display the updated todolist
-  showTodo();
-}
+const todolist = [
+  {name: 'Go to school', date: '2025-01-17'},
+  {name: 'Gym workout', date: '2025-01-17'}
+]
+const outputTask = document.querySelector('.output-task-grid');
+showTodo();
 
 function showTodo() {
-  // Initialize an empty string to store the HTML content for displaying the todos
-  let todolistHtml = '';
-
-  // Loop through each item in the todolist array
+  let todo = '';
   for (let i = 0; i < todolist.length; i++) {
-    // Create the HTML for each todo item
-    const todoHtml = `<p>${todolist[i]}</p>`;
-
-    // Add the individual todo's HTML to the todolistHtml string
-    todolistHtml += todoHtml;
+    const {name, date} = todolist[i];
+    const outputHtml = 
+    `
+      <div>${name}</div>
+      <div>${date}</div>
+      <button class="delete-task-button" onclick="
+        todolist.splice(${i}, 1);
+        showTodo();
+      ">Delete</button>
+    `
+    console.log(outputHtml);
+    todo += outputHtml;
   }
+  outputTask.innerHTML = todo;
+}
 
-  // Update the innerHTML of the '.output' element with the generated todolist HTML
-  document.querySelector('.output').innerHTML = todolistHtml;
+function addTodo() {
+  const name = document.querySelector('.input-name-task').value;
+  const date = document.querySelector('.input-date-task').value;
+
+  todolist.push({name, date});
+  showTodo();
 }

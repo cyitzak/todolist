@@ -3,17 +3,22 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Todolist</title>
   </head>
 
   <body>
-    <p>Input Task:</p>
-    <input type="text" class="input-todo">
-    <button class="add-task-btn" onclick="
-      addTodo();
-    ">Add</button>
-
-    <div class="output"></div>
+    <div class="container">
+      <p class="todo-title">Personal Todo</p>
+      <div class="input-task-grid">
+        <input class="input-name-task" type="text" placeholder="Task name">
+        <input class="input-date-task" type="date">
+        <button class="create-task-button" onclick="
+          addTodo();
+        ">Create</button>
+      </div>
+      <div class="output-task-grid"></div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
