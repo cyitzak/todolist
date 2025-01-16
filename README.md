@@ -11,3 +11,7 @@
 
 ### 🗑 Delete Tasks
 - Done with a task? Simply hit delete, and say goodbye to it from your list!
+
+
+#### See the projects!
+- link: https://cyitzak.github.io/todolist/
