@@ -1,9 +1,9 @@
 # 📝 To-Do List Website
 
 ## Tech Stack:
-HTML – Building the structure of your to-do list, one task at a time.
-CSS – Giving your tasks a stylish makeover and making the app visually appealing.
-JavaScript – Bringing functionality to your to-do list, letting you create and delete tasks with ease.
+- HTML – Building the structure of your to-do list, one task at a time.
+- CSS – Giving your tasks a stylish makeover and making the app visually appealing.
+- JavaScript – Bringing functionality to your to-do list, letting you create and delete tasks with ease.
 
 ## Features:
 ### 🚀 Create Tasks
