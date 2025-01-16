@@ -1,9 +1,13 @@
-## Todolist Website
+# 📝 To-Do List Website
 
-### Tech Stack:
-- HTML
-- CSS
-- Javascript
+## Tech Stack:
+HTML – Building the structure of your to-do list, one task at a time.
+CSS – Giving your tasks a stylish makeover and making the app visually appealing.
+JavaScript – Bringing functionality to your to-do list, letting you create and delete tasks with ease.
 
-### Project Preview:
-![Screenshot 2025-01-16 123718](https://github.com/user-attachments/assets/909c0dd4-a97e-4f10-a121-3339a4aa47ba)
+## Features:
+### 🚀 Create Tasks
+With just a click, add tasks to your to-do list and keep track of everything you need to get done.
+
+### 🗑 Delete Tasks
+Done with a task? Simply hit delete, and say goodbye to it from your list!
