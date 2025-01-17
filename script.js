@@ -10,11 +10,7 @@ function showTodo() {
     `
       <div>${name}</div>
       <div>${date}</div>
-      <button class="delete-task-button" onclick="
-        todolist.splice(${i}, 1);
-        saveToStorage();
-        showTodo();
-      ">Delete</button>
+      <button class="delete-task-button" onclick="deleteTask(${i})">Delete</button>
     `
     todo += outputHtml;
 
@@ -27,7 +23,13 @@ function addTodo() {
   const date = document.querySelector('.input-date-task').value;
 
   todolist.push({name, date});
-  
+
+  saveToStorage();
+  showTodo();
+}
+
+function deleteTask(index) {
+  todolist.splice(index, 1);
   saveToStorage();
   showTodo();
 }
