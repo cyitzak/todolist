@@ -1,7 +1,4 @@
-const todolist = [
-  {name: 'Go to school', date: '2025-01-17'},
-  {name: 'Gym workout', date: '2025-01-17'}
-]
+const todolist = JSON.parse(localStorage.getItem('todos')) || [];
 const outputTask = document.querySelector('.output-task-grid');
 showTodo();
 
@@ -15,11 +12,12 @@ function showTodo() {
       <div>${date}</div>
       <button class="delete-task-button" onclick="
         todolist.splice(${i}, 1);
+        localStorage.removeItem('todos');
         showTodo();
       ">Delete</button>
     `
-    console.log(outputHtml);
     todo += outputHtml;
+
   }
   outputTask.innerHTML = todo;
 }
@@ -27,7 +25,7 @@ function showTodo() {
 function addTodo() {
   const name = document.querySelector('.input-name-task').value;
   const date = document.querySelector('.input-date-task').value;
-
   todolist.push({name, date});
+  localStorage.setItem('todos', JSON.stringify(todolist));
   showTodo();
 }
