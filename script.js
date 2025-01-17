@@ -12,7 +12,7 @@ function showTodo() {
       <div>${date}</div>
       <button class="delete-task-button" onclick="
         todolist.splice(${i}, 1);
-        localStorage.removeItem('todos');
+        saveToStorage();
         showTodo();
       ">Delete</button>
     `
@@ -25,7 +25,13 @@ function showTodo() {
 function addTodo() {
   const name = document.querySelector('.input-name-task').value;
   const date = document.querySelector('.input-date-task').value;
+
   todolist.push({name, date});
-  localStorage.setItem('todos', JSON.stringify(todolist));
+  
+  saveToStorage();
   showTodo();
+}
+
+function saveToStorage() {
+  localStorage.setItem('todos', JSON.stringify(todolist));
 }
